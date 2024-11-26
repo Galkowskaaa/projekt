@@ -1,0 +1,21 @@
+```mermaid
+classDiagram
+    class User {
+        +int id
+        +string name
+        +string email
+        +void createTask(Task task)
+        +void deleteTask(Task task)
+    }
+
+    class Task {
+        +int id
+        +string title
+        +string description
+        +bool completed
+        +void markAsCompleted()
+        +void updateDetails(string title, string description)
+    }
+
+    User --> Task : "has many"
+```
