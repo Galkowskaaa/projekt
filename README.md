@@ -5,3 +5,6 @@
 
 ## Instalacja
 pip install -r requirements.txt
+
+## Uruchomienie
+uvicorn main:app --reload
